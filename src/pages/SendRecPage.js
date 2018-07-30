@@ -45,45 +45,33 @@ class SendRecPage extends Component {
         <TextInput
           style={styles.input}
           placeholder="Input Recommendation Title"
-          onChangeText={(title) => this.setState({title: text})}
+          onChangeText={(title) => this.setState({title})}
           value={this.state.title}/>
-        <Text style={{padding: 10, fontSize: 42}}>{this.state.title}</Text>
-        </hr>
         <TextInput
           style={styles.input}
           placeholder="Input Recommendation Description"
-          onChangeText={(description) => this.setState({description: text})}
+          onChangeText={(description) => this.setState({description})}
           value={this.state.description}/>
-        <Text style={{padding: 10, fontSize: 42}}>{this.state.description}</Text>
-        </hr>
         <TextInput
           style={styles.input}
           placeholder="Input Recommendation Comment"
-          onChangeText={(comment) => this.setState({comment: text})}
+          onChangeText={(comment) => this.setState({comment})}
           value={this.state.comment}/>
-        <Text style={{padding: 10, fontSize: 42}}>{this.state.comment}</Text>
-        </hr>
         <TextInput
-          style={{height: 40}}
-          placeholder="Input recommendation Location!"
+          style={styles.input}
+          placeholder="Input recommendation Location"
           onChangeText={(location) => this.setState({location})}
           value={this.state.location}/>
-        <Text style={{padding: 10, fontSize: 42}}>{this.state.location}</Text>
-        </hr>
         <TextInput
-          style={{height: 40}}
-          placeholder="Input recommendation Rating!"
+          style={styles.input}
+          placeholder="Input recommendation Rating"
           onChangeText={(rating) => this.setState({rating})}
           value={this.state.rating}/>
-        <Text style={{padding: 10, fontSize: 42}}>{this.state.rating}</Text>
-        </hr>
         <TextInput
-          style={{height: 40}}
-          placeholder="Input Recommendation Recipient!"
+          style={styles.input}
+          placeholder="Input Recommendation Recipient"
           onChangeText={(recipient) => this.setState({recipient})}
           value={this.state.recipient}/>
-        <Text style={{padding: 10, fontSize: 42}}>{this.state.recipient}</Text>
-        </hr>
           <TouchableOpacity
             style = {styles.submitButton}
             onPress = {() => this.inputs(this.state.title, this.state.description, this.state.comment, this.state.location, this.state.rating, this.state.recipient)}>
