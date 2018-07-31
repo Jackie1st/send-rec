@@ -31,12 +31,12 @@ class SendRecPage extends Component {
       comment: '',
       location: '',
       rating: '',
-      recipient: ''
+      recommender: ''
     };
   }
 
-  inputs = (title, description, comment, location, rating, recipient) => {
-    alert(`title: ${title}, description: ${description}, comment: ${comment}, location: ${location}, rating: ${rating}, recipient: ${recipient}`)
+  inputs = (title, description, comment, location, rating, recommender) => {
+    alert(`title: ${title}, description: ${description}, comment: ${comment}, location: ${location}, rating: ${rating}, recommender: ${recommender}`)
   }
 
   render() {
@@ -69,12 +69,12 @@ class SendRecPage extends Component {
           value={this.state.rating}/>
         <TextInput
           style={styles.input}
-          placeholder="Input Recommendation Recipient"
-          onChangeText={(recipient) => this.setState({recipient})}
-          value={this.state.recipient}/>
+          placeholder="Input Recommendation recommender"
+          onChangeText={(recommender) => this.setState({recommender})}
+          value={this.state.recommender}/>
           <TouchableOpacity
             style = {styles.submitButton}
-            onPress = {() => this.inputs(this.state.title, this.state.description, this.state.comment, this.state.location, this.state.rating, this.state.recipient)}>
+            onPress = {() => this.inputs(this.state.title, this.state.description, this.state.comment, this.state.location, this.state.rating, this.state.recommender)}>
             <Text style = {styles.submitButtonText}> SUBMIT </Text>
           </TouchableOpacity>
       </View>
